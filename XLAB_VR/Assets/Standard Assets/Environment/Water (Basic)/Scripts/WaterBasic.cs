@@ -1,13 +1,31 @@
 using System;
 using UnityEngine;
-
-namespace UnityStandardAssets.Water
-{
-    [ExecuteInEditMode]
     public class WaterBasic : MonoBehaviour
     {
+    Vector3 pos;
+    Vector3 rotate;
+    Vector3 scale;
+        int posy;
+        int posx;
+    Vector3 temp;
+        private void Awake()
+        {
+        
+        }
+        private void Start()
+        {
+        pos = transform.position;
+        scale = transform.localScale;
+        temp = pos;
+        //rotate = transform.rotation;
+
+    }
         void Update()
         {
+        temp.y += 1f;
+        transform.position = temp;
+
+            Debug.Log(pos);
             Renderer r = GetComponent<Renderer>();
             if (!r)
             {
@@ -28,5 +46,9 @@ namespace UnityStandardAssets.Water
                 Mathf.Repeat(offset4.z, 1.0f), Mathf.Repeat(offset4.w, 1.0f));
             mat.SetVector("_WaveOffset", offsetClamped);
         }
+
+        void menu()
+        {
+
+        }
     }
-}

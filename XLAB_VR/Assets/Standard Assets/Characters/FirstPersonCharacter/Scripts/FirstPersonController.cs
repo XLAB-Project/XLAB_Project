@@ -41,6 +41,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
+		public Animator Tree_anim;
 
         // Use this for initialization
         private void Start()
@@ -55,12 +56,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_Jumping = false;
             m_AudioSource = GetComponent<AudioSource>();
 			m_MouseLook.Init(transform , m_Camera.transform);
+			Tree_anim = GetComponent<Animator>();
         }
 
 
         // Update is called once per frame
         private void Update()
         {
+			PlayAnimation();
             RotateView();
             // the jump state needs to read here to make sure it is not missed
             if (!m_Jump)
@@ -82,7 +85,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             m_PreviouslyGrounded = m_CharacterController.isGrounded;
         }
-
+		
+		private void PlayAnimation()
+		{
+			if (Input.GetKeyDown("1"))
+        {
+            Tree_anim.setBool("inRange",true);
+        }
+		}
 
         private void PlayLandingSound()
         {

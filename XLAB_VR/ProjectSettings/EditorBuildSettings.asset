@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Questionnaire.unity
     guid: 33beb9ec0d04fc04794f1429ec6d9962
+  - enabled: 1
+    path: Assets/ParkBestCase.unity
+    guid: 2904d33c7d23fae4eaa43e4343dd3c1e
+  - enabled: 1
+    path: Assets/ParkModerateCase.unity
+    guid: 765dbc4aa798d3442a720e6cbf80b5c3
+  - enabled: 1
+    path: Assets/ParkWorstCase.unity
+    guid: a7bb1bd75ac37c648a1bd671f625c53d
   m_configObjects: {}

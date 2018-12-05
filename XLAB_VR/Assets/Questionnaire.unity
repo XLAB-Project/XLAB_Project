@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.8683319, b: 1, a: 1}
+  m_Color: {r: 0.5235849, g: 0.936478, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1037,6 +1037,7 @@ GameObject:
   - component: {fileID: 132558694}
   - component: {fileID: 132558693}
   - component: {fileID: 132558692}
+  - component: {fileID: 132558695}
   m_Layer: 5
   m_Name: Finish_Button
   m_TagString: Untagged
@@ -1104,17 +1105,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4026660}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 0}
         m_MethodName: SetActive
         m_Mode: 6
@@ -1164,6 +1154,53 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 132558690}
   m_CullTransparentMesh: 0
+--- !u!114 &132558695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 132558690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c73fbd0f29c786442b033075b1d280f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FirstA: {fileID: 1661649574}
+  FirstB: {fileID: 983804068}
+  FirstC: {fileID: 238682871}
+  SecondA: {fileID: 189189192}
+  SecondB: {fileID: 810478776}
+  ThirdA: {fileID: 1247854471}
+  ThirdB: {fileID: 1655022590}
+  FourthA: {fileID: 331022595}
+  FourthB: {fileID: 1253487271}
+  FifthA: {fileID: 1274886984}
+  FifthB: {fileID: 300511302}
+  FifthC: {fileID: 347253656}
+  SixthA: {fileID: 1032763683}
+  SixthB: {fileID: 1934859542}
+  SixthC: {fileID: 2040223275}
+  SeventhA: {fileID: 1394160193}
+  SeventhB: {fileID: 620755009}
+  SeventhC: {fileID: 1985980743}
+  EightA: {fileID: 460287065}
+  EightB: {fileID: 1877404413}
+  EightC: {fileID: 1187337930}
+  NinthA: {fileID: 1273319119}
+  NinthB: {fileID: 1528527901}
+  NinthC: {fileID: 509431828}
+  TenthA: {fileID: 802309255}
+  TenthB: {fileID: 1265216020}
+  TenthC: {fileID: 1369508345}
+  TenthD: {fileID: 721563974}
+  EleventhA: {fileID: 1368471276}
+  EleventhB: {fileID: 785417596}
+  EleventhC: {fileID: 573912236}
+  EleventhD: {fileID: 1725114998}
+  TwelveA: {fileID: 495525680}
+  TwelveB: {fileID: 1294082004}
+  TwelveC: {fileID: 1386256900}
+  TwelveD: {fileID: 163826503}
 --- !u!1001 &143690017
 Prefab:
   m_ObjectHideFlags: 0
@@ -1393,7 +1430,7 @@ GameObject:
   - component: {fileID: 163826502}
   - component: {fileID: 163826503}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: TwelveD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1736,7 +1773,7 @@ GameObject:
   - component: {fileID: 189189191}
   - component: {fileID: 189189192}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: SecondA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2167,7 +2204,7 @@ GameObject:
   - component: {fileID: 238682870}
   - component: {fileID: 238682871}
   m_Layer: 5
-  m_Name: C3Toggle
+  m_Name: FirstC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2769,7 +2806,7 @@ GameObject:
   - component: {fileID: 300511301}
   - component: {fileID: 300511302}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: FifthB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2919,7 +2956,7 @@ GameObject:
   - component: {fileID: 331022594}
   - component: {fileID: 331022595}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: FourthA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2999,7 +3036,7 @@ GameObject:
   - component: {fileID: 347253655}
   - component: {fileID: 347253656}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: FifthC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3808,7 +3845,7 @@ GameObject:
   - component: {fileID: 460287064}
   - component: {fileID: 460287065}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: EightA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4389,7 +4426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.8683319, b: 1, a: 1}
+  m_Color: {r: 0.5235849, g: 0.936478, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4428,7 +4465,7 @@ GameObject:
   - component: {fileID: 495525679}
   - component: {fileID: 495525680}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: TwelveA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4508,7 +4545,7 @@ GameObject:
   - component: {fileID: 509431827}
   - component: {fileID: 509431828}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: NinthC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4770,7 +4807,7 @@ RectTransform:
   m_Children:
   - {fileID: 220606890}
   m_Father: {fileID: 2079917233}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5286,7 +5323,7 @@ GameObject:
   - component: {fileID: 573912235}
   - component: {fileID: 573912236}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: EleventhC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5927,7 +5964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.8683319, b: 1, a: 1}
+  m_Color: {r: 0.5235849, g: 0.936478, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5966,7 +6003,7 @@ GameObject:
   - component: {fileID: 620755008}
   - component: {fileID: 620755009}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: SeventhB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6459,7 +6496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.8683319, b: 1, a: 1}
+  m_Color: {r: 0.5235849, g: 0.936478, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6881,7 +6918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.8683319, b: 1, a: 1}
+  m_Color: {r: 0.5235849, g: 0.936478, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6920,7 +6957,7 @@ GameObject:
   - component: {fileID: 721563973}
   - component: {fileID: 721563974}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: TenthD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7414,7 +7451,7 @@ GameObject:
   - component: {fileID: 785417595}
   - component: {fileID: 785417596}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: EleventhB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7639,7 +7676,7 @@ GameObject:
   - component: {fileID: 802309254}
   - component: {fileID: 802309255}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: TenthA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7719,7 +7756,7 @@ GameObject:
   - component: {fileID: 810478775}
   - component: {fileID: 810478776}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: SecondB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8796,7 +8833,7 @@ GameObject:
   - component: {fileID: 983804067}
   - component: {fileID: 983804068}
   m_Layer: 5
-  m_Name: 'C2Toggle '
+  m_Name: FirstB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9492,7 +9529,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2079917233}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9552,7 +9589,7 @@ GameObject:
   - component: {fileID: 1032763682}
   - component: {fileID: 1032763683}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: SixthA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10353,7 +10390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.8683319, b: 1, a: 1}
+  m_Color: {r: 0.5235849, g: 0.936478, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -10586,7 +10623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.8683319, b: 1, a: 1}
+  m_Color: {r: 0.5235849, g: 0.936478, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -10778,7 +10815,7 @@ GameObject:
   - component: {fileID: 1187337929}
   - component: {fileID: 1187337930}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: EightC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11476,7 +11513,7 @@ GameObject:
   - component: {fileID: 1247854470}
   - component: {fileID: 1247854471}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: ThirdA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11556,7 +11593,7 @@ GameObject:
   - component: {fileID: 1253487270}
   - component: {fileID: 1253487271}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: FourthB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11687,7 +11724,7 @@ GameObject:
   - component: {fileID: 1265216019}
   - component: {fileID: 1265216020}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: TenthB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11837,7 +11874,7 @@ GameObject:
   - component: {fileID: 1273319118}
   - component: {fileID: 1273319119}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: NinthA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11917,7 +11954,7 @@ GameObject:
   - component: {fileID: 1274886983}
   - component: {fileID: 1274886984}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: FifthA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12066,7 +12103,7 @@ GameObject:
   - component: {fileID: 1294082003}
   - component: {fileID: 1294082004}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: TwelveB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12186,7 +12223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.8683319, b: 1, a: 1}
+  m_Color: {r: 0.5235849, g: 0.936478, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -12710,7 +12747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.8683319, b: 1, a: 1}
+  m_Color: {r: 0.5235849, g: 0.936478, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -12749,7 +12786,7 @@ GameObject:
   - component: {fileID: 1368471275}
   - component: {fileID: 1368471276}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: EleventhA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12829,7 +12866,7 @@ GameObject:
   - component: {fileID: 1369508344}
   - component: {fileID: 1369508345}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: TenthC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13055,7 +13092,7 @@ GameObject:
   - component: {fileID: 1386256899}
   - component: {fileID: 1386256900}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: TwelveC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13135,7 +13172,7 @@ GameObject:
   - component: {fileID: 1394160192}
   - component: {fileID: 1394160193}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: SeventhA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13324,7 +13361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.8683319, b: 1, a: 1}
+  m_Color: {r: 0.5235849, g: 0.936478, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13837,7 +13874,7 @@ GameObject:
   - component: {fileID: 1528527900}
   - component: {fileID: 1528527901}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: NinthB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14570,7 +14607,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2079917233}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -15203,7 +15240,7 @@ GameObject:
   - component: {fileID: 1655022589}
   - component: {fileID: 1655022590}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: ThirdB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15494,7 +15531,7 @@ GameObject:
   - component: {fileID: 1661649573}
   - component: {fileID: 1661649574}
   m_Layer: 5
-  m_Name: C1Toggle
+  m_Name: FirstA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15893,7 +15930,7 @@ GameObject:
   - component: {fileID: 1725114997}
   - component: {fileID: 1725114998}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: EleventhD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16151,7 +16188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.8683319, b: 1, a: 1}
+  m_Color: {r: 0.5235849, g: 0.936478, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -16726,7 +16763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.8683319, b: 1, a: 1}
+  m_Color: {r: 0.5235849, g: 0.936478, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -17511,7 +17548,7 @@ GameObject:
   - component: {fileID: 1877404412}
   - component: {fileID: 1877404413}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: EightB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17631,7 +17668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.8683319, b: 1, a: 1}
+  m_Color: {r: 0.5235849, g: 0.936478, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -18021,7 +18058,7 @@ GameObject:
   - component: {fileID: 1934859541}
   - component: {fileID: 1934859542}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: SixthB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18483,7 +18520,7 @@ GameObject:
   - component: {fileID: 1985980742}
   - component: {fileID: 1985980743}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: SeventhC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18996,7 +19033,7 @@ GameObject:
   - component: {fileID: 2040223274}
   - component: {fileID: 2040223275}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: SixthC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19467,9 +19504,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 542476973}
   - {fileID: 1610182148}
   - {fileID: 1032736282}
+  - {fileID: 542476973}
   m_Father: {fileID: 923215447}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

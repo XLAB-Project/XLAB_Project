@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class LoadLevelOnClick : MonoBehaviour
-{
+{   //toggle button fields
     public Toggle FirstA, FirstB, FirstC;
     public Toggle SecondA,SecondB;
     public Toggle ThirdA, ThirdB;
@@ -18,17 +18,12 @@ public class LoadLevelOnClick : MonoBehaviour
     public Toggle EleventhA, EleventhB, EleventhC, EleventhD;
     public Toggle TwelveA, TwelveB, TwelveC, TwelveD;
     int first_val, second_val, third_val, fourth_val, fifth_val, 
-        sixth_val, seventh_val, eight_val, ninth_val, tenth_val, eleventh_val, twelve_val; 
+        sixth_val, seventh_val, eight_val, ninth_val, tenth_val, eleventh_val, twelve_val; //value holders
     int final_val; //to get total val 
     
 
     public void Start()
     {    // if-elseif statements for Q1
-
-        //FirstA = GetComponent<Toggle>();
-        //FirstB = GetComponent<Toggle>();
-        //FirstC = GetComponent<Toggle>();
-
         if (FirstA.isOn)
         {
             first_val = 5;
@@ -201,21 +196,23 @@ public class LoadLevelOnClick : MonoBehaviour
 
     public void LoadByIndex(int sceneIndex)
     {
+        
         final_val = first_val + second_val + third_val + fourth_val + fifth_val + 
             sixth_val + seventh_val + eight_val + ninth_val + tenth_val + eleventh_val + twelve_val;
+            
 
-        if (final_val >= 12 && final_val <= 26)
+        if ((final_val >= 12) && (final_val <= 26))
         {
             //Load Best Case Scenario Scene
-            SceneManager.LoadScene(sceneIndex);
+            SceneManager.LoadScene(2);
         }
-        else if (final_val >= 27 && final_val <= 40)
-        {
-            SceneManager.LoadScene(sceneIndex);
+        else if ((final_val >= 27) && (final_val <= 40))
+        {   //Load Moderate Case Scenario Scene
+            SceneManager.LoadScene(3);
         }
-        else if (final_val >=41 && final_val <=56)
-        {
-            SceneManager.LoadScene(sceneIndex);
+        else if ((final_val >=41) && (final_val <=56))
+        {   //Load Worst Case Scenario Scene
+            SceneManager.LoadScene(4);
         }
     }
 }

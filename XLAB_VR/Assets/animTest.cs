@@ -34,6 +34,10 @@ public class animTest : MonoBehaviour
             StartCoroutine(TriggerAnimatorBool("hit"));
 
             theAudio.PlayOneShot(hitSound, 0.9f);
+			
+			Destroy(GetComponent<Rigidbody>());
+			
+			Destroy(GetComponent<BoxCollider>());
 
     }
 

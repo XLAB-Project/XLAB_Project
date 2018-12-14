@@ -889,7 +889,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: -0.10423816, y: 0.44262728, z: 0.079716004, w: 0.8870518}
-  m_LocalPosition: {x: 227.7, y: 23.3, z: 284.8}
+  m_LocalPosition: {x: 202, y: 15, z: 265}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6556,6 +6556,7 @@ GameObject:
   - component: {fileID: 1047955074}
   - component: {fileID: 1047955073}
   - component: {fileID: 1047955072}
+  - component: {fileID: 1047955075}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -6608,6 +6609,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1047955075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1047955071}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63f395c60c96f234e84fd83c65d480e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  ClickInputName: Submit
+  GazeTimeInSeconds: 2
 --- !u!1001 &1064076162
 Prefab:
   m_ObjectHideFlags: 0
@@ -8843,12 +8858,12 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: "The goal of XLAB is to bring awareness\n to extreme weather events through\na
-        virtual reality experience. \n"
+        virtual reality experience.\n"
       objectReference: {fileID: 0}
     - target: {fileID: 114159393634862230, guid: 1632f3a40027b6d4f85a07a92f2c6822,
         type: 2}
       propertyPath: m_FontData.m_FontSize
-      value: 20
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 114159393634862230, guid: 1632f3a40027b6d4f85a07a92f2c6822,
         type: 2}
@@ -8865,6 +8880,61 @@ Prefab:
       propertyPath: m_FontData.m_HorizontalOverflow
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 223239559646195872, guid: 1632f3a40027b6d4f85a07a92f2c6822,
+        type: 2}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224287125157083118, guid: 1632f3a40027b6d4f85a07a92f2c6822,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224287125157083118, guid: 1632f3a40027b6d4f85a07a92f2c6822,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224287125157083118, guid: 1632f3a40027b6d4f85a07a92f2c6822,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224287125157083118, guid: 1632f3a40027b6d4f85a07a92f2c6822,
+        type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.587
+      objectReference: {fileID: 0}
+    - target: {fileID: 224287125157083118, guid: 1632f3a40027b6d4f85a07a92f2c6822,
+        type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 50.482002
+      objectReference: {fileID: 0}
+    - target: {fileID: 224287125157083118, guid: 1632f3a40027b6d4f85a07a92f2c6822,
+        type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.711
+      objectReference: {fileID: 0}
+    - target: {fileID: 114866879259922872, guid: 1632f3a40027b6d4f85a07a92f2c6822,
+        type: 2}
+      propertyPath: m_Text
+      value: BATTLE CLIMATE CHANGE
+      objectReference: {fileID: 0}
+    - target: {fileID: 114682008897864816, guid: 1632f3a40027b6d4f85a07a92f2c6822,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501206633348536, guid: 1632f3a40027b6d4f85a07a92f2c6822,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 223239559646195872, guid: 1632f3a40027b6d4f85a07a92f2c6822,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 534669904}
     m_RemovedComponents:
     - {fileID: 114076787798995520, guid: 1632f3a40027b6d4f85a07a92f2c6822, type: 2}
     - {fileID: 114772731674864542, guid: 1632f3a40027b6d4f85a07a92f2c6822, type: 2}

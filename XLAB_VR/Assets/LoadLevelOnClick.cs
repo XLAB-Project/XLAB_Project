@@ -5,25 +5,28 @@ using UnityEngine.UI;
 
 public class LoadLevelOnClick : MonoBehaviour
 {   //toggle button fields
-    public Toggle FirstA, FirstB, FirstC;
-    public Toggle SecondA,SecondB;
-    public Toggle ThirdA, ThirdB;
-    public Toggle FourthA, FourthB;
-    public Toggle FifthA, FifthB, FifthC;
-    public Toggle SixthA, SixthB, SixthC;
-    public Toggle SeventhA, SeventhB, SeventhC;
-    public Toggle EightA, EightB, EightC;
-    public Toggle NinthA, NinthB, NinthC;
-    public Toggle TenthA, TenthB, TenthC, TenthD;
-    public Toggle EleventhA, EleventhB, EleventhC, EleventhD;
-    public Toggle TwelveA, TwelveB, TwelveC, TwelveD;
-    int first_val, second_val, third_val, fourth_val, fifth_val, 
+     public Toggle FirstA, FirstB, FirstC;
+     public Toggle SecondA,SecondB;
+     public Toggle ThirdA, ThirdB;
+     public Toggle FourthA, FourthB;
+     public Toggle FifthA, FifthB, FifthC;
+     public Toggle SixthA, SixthB, SixthC;
+     public Toggle SeventhA, SeventhB, SeventhC;
+     public Toggle EightA, EightB, EightC;
+     public Toggle NinthA, NinthB, NinthC;
+     public Toggle TenthA, TenthB, TenthC, TenthD;
+     public Toggle EleventhA, EleventhB, EleventhC, EleventhD;
+     public Toggle TwelveA, TwelveB, TwelveC, TwelveD;
+     public float timeElapsed;
+     public int first_val, second_val, third_val, fourth_val, fifth_val, 
         sixth_val, seventh_val, eight_val, ninth_val, tenth_val, eleventh_val, twelve_val; //value holders
-    int final_val; //to get total val 
+     public int final_val; //to get total val 
     
 
     public void Start()
-    {    // if-elseif statements for Q1
+      {
+        
+        // if-elseif statements for Q1
         if (FirstA.isOn)
         {
             first_val = 5;
@@ -191,28 +194,58 @@ public class LoadLevelOnClick : MonoBehaviour
         {
             twelve_val = 5;
         }
+
+        StartCoroutine(LoadAfterDelay());
+
     }
 
-
-    public void LoadByIndex(int sceneIndex)
+    IEnumerator LoadAfterDelay()
     {
         
-        final_val = first_val + second_val + third_val + fourth_val + fifth_val + 
-            sixth_val + seventh_val + eight_val + ninth_val + tenth_val + eleventh_val + twelve_val;
-            
+        //public void LoadByIndex(int sceneIndex)
+        //{
 
-        if ((final_val >= 12) && (final_val <= 26))
-        {
-            //Load Best Case Scenario Scene
-            SceneManager.LoadScene(2);
+            final_val = first_val + second_val + third_val + fourth_val + fifth_val +
+                sixth_val + seventh_val + eight_val + ninth_val + tenth_val + eleventh_val + twelve_val;
+
+            //Loads Base
+            if ((final_val >= 12) && (final_val <= 26))
+            {
+            yield return new WaitForSeconds(5);
+            SceneManager.LoadScene(5);//Base Scene
+            //yield return new WaitForSeconds(5);
+            //SceneManager.LoadScene(6);//Storm Scene
+            //yield return new WaitForSeconds(5);
+            //SceneManager.LoadScene(2);//Best Case
+            //yield return new WaitForSeconds(5);
+            //SceneManager.LoadScene(7);//End Scene
         }
-        else if ((final_val >= 27) && (final_val <= 40))
-        {   //Load Moderate Case Scenario Scene
-            SceneManager.LoadScene(3);
+
+            else if ((final_val >= 27) && (final_val <= 40))
+            {
+            //Load Base, Storm then Moderate Case Scenario Scene
+            yield return new WaitForSeconds(5);
+            SceneManager.LoadScene(5);//Base Scene
+            //yield return new WaitForSeconds(60);
+            //SceneManager.LoadScene(6);//Storm Scene
+            //yield return new WaitForSeconds(60);
+            //SceneManager.LoadScene(3);//Moderate Case
+            //yield return new WaitForSeconds(60);
+            //SceneManager.LoadScene(7);//End Scene
         }
-        else if ((final_val >=41) && (final_val <=56))
-        {   //Load Worst Case Scenario Scene
-            SceneManager.LoadScene(4);
+
+            else if ((final_val >= 41) && (final_val <= 56))
+            {
+            //Load Base, Storm, then Worst Case Scenario Scene
+            yield return new WaitForSeconds(5);
+            SceneManager.LoadScene(5);//Base Scene
+            //yield return new WaitForSeconds(60);
+            //SceneManager.LoadScene(6);//Storm Scene
+            //yield return new WaitForSeconds(60);
+            //SceneManager.LoadScene(4);//Worst Case
+            //yield return new WaitForSeconds(60);
+            //SceneManager.LoadScene(7);//End Scene
         }
-    }
-}
+        //}
+    }    
+ }

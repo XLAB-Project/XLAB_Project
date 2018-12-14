@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/ParkWorstCase.unity
     guid: a7bb1bd75ac37c648a1bd671f625c53d
+  - enabled: 1
+    path: Assets/baseScene.unity
+    guid: 5c9425bd96d8bf04eaebfca94c8e01ae
+  - enabled: 1
+    path: Assets/parkStormScene.unity
+    guid: 60af9dc3a9b9d7e4aaad34e21ec2d4e7
+  - enabled: 1
+    path: Assets/EndScene.unity
+    guid: fc118eb7961cfd74998b8ed35a27949c
   m_configObjects: {}

@@ -14,7 +14,7 @@ public class LoadChoice : MonoBehaviour
 
     IEnumerator StormDelay()
     {
-        int index = PlayerPrefs.GetInt("endScene",0);
+        int index = PlayerPrefs.GetInt("aftermathScene",0);
         yield return new WaitForSeconds(35);
         SceneManager.LoadScene(index);//Choice Scene
     }

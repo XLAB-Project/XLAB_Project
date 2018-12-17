@@ -211,6 +211,8 @@ public class LoadLevelOnClick : MonoBehaviour
             //Loads Base
             if ((final_val >= 12) && (final_val <= 26))
             {
+			PlayerPrefs.SetInt("endScene", 2);//Store aftermath scene
+			//Debug.Log("BC");
             yield return new WaitForSeconds(5);
             SceneManager.LoadScene(5);//Base Scene
             //yield return new WaitForSeconds(5);
@@ -224,6 +226,8 @@ public class LoadLevelOnClick : MonoBehaviour
             else if ((final_val >= 27) && (final_val <= 40))
             {
             //Load Base, Storm then Moderate Case Scenario Scene
+			PlayerPrefs.SetInt("endScene", 3);//Store aftermath scene
+			//Debug.Log("MC");
             yield return new WaitForSeconds(5);
             SceneManager.LoadScene(5);//Base Scene
             //yield return new WaitForSeconds(60);
@@ -237,6 +241,8 @@ public class LoadLevelOnClick : MonoBehaviour
             else if ((final_val >= 41) && (final_val <= 56))
             {
             //Load Base, Storm, then Worst Case Scenario Scene
+			PlayerPrefs.SetInt("endScene", 4);//Store aftermath scene
+			//Debug.Log("WC");
             yield return new WaitForSeconds(5);
             SceneManager.LoadScene(5);//Base Scene
             //yield return new WaitForSeconds(60);
